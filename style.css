@@ -1,11 +1,13 @@
 body {
 	text-align: center;
 	font-size:25pt;
+	background-color: #92dbdd;
 }
-h1 {
+#banner {
 	font-size:35pt;
 	text-align: center;
 	font-weight: bold;
+	color:white;
 }
 h2 {
 	font-size:30pt;
@@ -17,4 +19,20 @@ h2 {
 #date {
 	font-weight: bold;
 	display:inline;
+}
+#dashboardDiv,
+#todaysWorkout,
+#todaysMeals {
+	display:inline-block;
+	width:80%;
+	margin:5px 10% 15px;
+	background-color: #fcfcfc;
+	border:solid 2px white;
+}
+#logWorkout,
+#submitMeals {
+	margin:10px;
+}
+.stat {
+	font-weight: bold;
 }

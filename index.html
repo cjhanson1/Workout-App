@@ -9,32 +9,32 @@
 	<script src="moment.js"></script>
 </head>
 <body>
-	<h1>CJ's Workout App</h1>
-	<div id="dashBoard" style="border:2pt solid black">
+	<div id="banner">CJ's Workout App</div>
+	<div id="dashboardDiv">
 		<h2 id="dashboard">Dashboard:</h2>
-		<div id="date">Today's Date</div><br>
+		<div class="stat" id="date">Today's Date</div><br>
 		Gym Attendance
-		<div id="aveGymQuant"></div>
+		<div class="stat" id="aveGymQuant"></div>
 		Workout Quality
-		<div id="aveGymQual"></div>
+		<div class="stat" id="aveGymQual"></div>
 		Meals Consumed
-		<div id="aveMealQuant"></div>
+		<div class="stat" id="aveMealQuant"></div>
 		Meal Quality
-		<div id="aveMealQual"></div>
+		<div class="stat" id="aveMealQual"></div>
 		Weight
-		<div id="aveWeight"></div>
+		<div class="stat" id="aveWeight"></div>
 
 	</div>
-	<div id="todaysWorkout" style="border:2pt solid black">
+	<div id="todaysWorkout">
 		<h2>Today's Workout</h2>
 		<div id="currentWorkout"></div>
 		<p>Rate Today's Workout</p>
-		<input id="gymRating" type="text">
+		<input id="gymRating" type="text"><br>
 		<button id="logWorkout">Workout Complete</button>
 	</div>
-	<div id="todaysMeals" style="border:2pt solid black">
+	<div id="todaysMeals">
 		<h2>Today's Meals</h2>
-		Today's Meal Count
+		Today's Meal Count<br>
 		<input id="mealCount" type="text"><br>
 		Today's Nutrition Rating<br>
 		<input id="nutritionRating" type="text"><br>
