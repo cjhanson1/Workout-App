@@ -1,0 +1,20 @@
+body {
+	text-align: center;
+	font-size:25pt;
+}
+h1 {
+	font-size:35pt;
+	text-align: center;
+	font-weight: bold;
+}
+h2 {
+	font-size:30pt;
+	font-weight: bold;
+}
+#dashboard {
+	display:inline;
+}
+#date {
+	font-weight: bold;
+	display:inline;
+}

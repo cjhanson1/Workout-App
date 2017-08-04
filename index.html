@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CJ's Workout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="moment.js"></script>
+</head>
+<body>
+	<h1>CJ's Workout App</h1>
+	<div id="dashBoard" style="border:2pt solid black">
+		<h2 id="dashboard">Dashboard:</h2>
+		<div id="date">Today's Date</div><br>
+		Gym Attendance
+		<div id="aveGymQuant"></div>
+		Workout Quality
+		<div id="aveGymQual"></div>
+		Meals Consumed
+		<div id="aveMealQuant"></div>
+		Meal Quality
+		<div id="aveMealQual"></div>
+		Weight
+		<div id="aveWeight"></div>
+
+	</div>
+	<div id="todaysWorkout" style="border:2pt solid black">
+		<h2>Today's Workout</h2>
+		<div id="currentWorkout"></div>
+		<p>Rate Today's Workout</p>
+		<input id="gymRating" type="text">
+		<button id="logWorkout">Workout Complete</button>
+	</div>
+	<div id="todaysMeals" style="border:2pt solid black">
+		<h2>Today's Meals</h2>
+		Today's Meal Count
+		<input id="mealCount" type="text"><br>
+		Today's Nutrition Rating<br>
+		<input id="nutritionRating" type="text"><br>
+		Today's Weight<br>
+		<input id="weight" type="text"><br>
+		<button id="submitMeals">Submit Today's Meals</button>
+	</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDsWhupWiJc83wSwSm7R3YCWXyC0zTBJqM",
+    authDomain: "workout-app-23ffb.firebaseapp.com",
+    databaseURL: "https://workout-app-23ffb.firebaseio.com",
+    projectId: "workout-app-23ffb",
+    storageBucket: "workout-app-23ffb.appspot.com",
+    messagingSenderId: "404834800676"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="logic.js"></script>
+</body>
+</html>
