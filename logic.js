@@ -11,16 +11,16 @@ var weight = [155,155,155,155,155]
 var x = 0
 var workOutToday = false
 
-// database.ref().set({
-// 	gymQuant:gymQuant,
-// 	gymQual:gymQual,
-// 	mealQuant:mealQuant,
-// 	mealQual:mealQual,
-// 	x:x,
-// 	weight:weight,
-// 	todaysDate:todaysDate,
-// 	workOutToday:workOutToday
-// 	})
+database.ref().set({
+	gymQuant:gymQuant,
+	gymQual:gymQual,
+	mealQuant:mealQuant,
+	mealQual:mealQual,
+	x:x,
+	weight:weight,
+	todaysDate:todaysDate,
+	workOutToday:workOutToday
+	})
 
 database.ref().on("value",function(snapshot){
 	x=snapshot.val().x
