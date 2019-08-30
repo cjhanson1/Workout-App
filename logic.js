@@ -1,6 +1,6 @@
 $( document ).ready(function(){
 var database = firebase.database()
-var todaysDate = "2018-02-25T12:00:00-06:00"
+var todaysDate = "2019-09-01T12:00:00-06:00"
 var todaysWorkout= ""
 var workouts = ["Bi's Tri's Calves & Run","Core Butt & Run","Chest Back & Run","Shoulders Forearms & Run","Legs Squats & Deadlifts"]
 var gymQuant = [0,0,1,1,0,1,0,0,1,0]
