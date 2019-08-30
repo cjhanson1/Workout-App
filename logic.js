@@ -1,13 +1,13 @@
 $( document ).ready(function(){
 var database = firebase.database()
-var todaysDate = "2019-09-01T12:00:00-06:00"
+var todaysDate = "2019-08-30T12:00:00-06:00"
 var todaysWorkout= ""
 var workouts = ["Bi's Tri's Calves & Run","Core Butt & Run","Chest Back & Run","Shoulders Forearms & Run","Legs Squats & Deadlifts"]
-var gymQuant = [0,0,1,1,0,1,0,0,1,0]
-var gymQual  = [0,0,4,2,0,4,0,0,5,0]
+var gymQuant = [1,0,0,0,0,0,0,0,0,0]
+var gymQual  = [4,0,0,0,0,0,0,0,0,0]
 var mealQuant= [3,3,3,2,3,2,3,3,3,2]
 var mealQual = [4,3,2,3,4,5,4,2,3,3]
-var weight = [155,155,155,155,155]
+var weight = [160,160,160,160,160]
 var x = 0
 var workOutToday = false
 
